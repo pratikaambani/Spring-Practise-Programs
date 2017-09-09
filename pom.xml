@@ -12,6 +12,7 @@
         <module>spring-practise-1</module>
         <module>spring-practise-2</module>
         <module>spring-practise-3</module>
+        <module>spring-practise-4</module>
     </modules>
 
     <dependencies>
