@@ -20,4 +20,14 @@ public class BaseballCoach implements Coach {
         return fortuneService.getDailyFortune();
     }
 
+    //TODO 009: Custom init and destroy methods
+    public void customInitMethod() {
+        System.out.println("This will be executed at initialization");
+    }
+
+    public void customDestroyMethod() {
+        System.out.println("This will be executed before destruction of bean");
+    }
+
+
 }
