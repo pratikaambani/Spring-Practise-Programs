@@ -18,12 +18,10 @@ public class MyApp {
         System.out.println(coach2.getDailyWorkout());
 
 
-/*
         ApplicationContext context = new ClassPathXmlApplicationContext(applicationContextPath);
 
         Coach myCoach = (Coach) context.getBean("myCoachBean", Coach.class);
         System.out.println(myCoach.getDailyWorkout());
-*/
 
     }
 }
