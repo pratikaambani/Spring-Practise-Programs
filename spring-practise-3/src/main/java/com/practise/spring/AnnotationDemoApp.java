@@ -13,5 +13,8 @@ public class AnnotationDemoApp {
         //TODO 011: Default bean id by removing custom bean ID in TennisCoach class
         Coach coach = context.getBean("tennisCoach", Coach.class);
         System.out.println(coach.getDailyWorkout());
+
+        //TODO 012: Constructor level DI
+        System.out.println(coach.getDailyFortune());
     }
 }

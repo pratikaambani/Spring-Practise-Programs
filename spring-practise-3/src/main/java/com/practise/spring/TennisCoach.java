@@ -1,5 +1,6 @@
 package com.practise.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,8 +10,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 
+    private FortuneService fortuneService;
+
+    //TODO 012: Added constructor level DI
+    @Autowired
+    public TennisCoach(FortuneService fortuneService) {
+        this.fortuneService = fortuneService;
+    }
+
     @Override
     public String getDailyWorkout() {
         return "Practise forehand properly";
+    }
+
+    @Override
+    public String getDailyFortune() {
+        return fortuneService.getFortune();
     }
 }
