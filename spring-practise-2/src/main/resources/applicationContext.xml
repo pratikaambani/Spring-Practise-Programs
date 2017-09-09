@@ -11,4 +11,9 @@
         <constructor-arg ref="myFortuneService" />
     </bean>
 
+    <!--TODO 004: setter based dependency-->
+    <bean id="myCktCoach" class="com.practise.spring.CricketCoach">
+        <!--<property name="service" ref="myFortuneService"> </property>-->
+    </bean>
+
 </beans>

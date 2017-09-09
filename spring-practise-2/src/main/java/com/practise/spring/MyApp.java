@@ -18,5 +18,8 @@ public class MyApp {
 
         System.out.println(myCoach.getDailyFortune());
 
+        //TODO 004:
+        Coach anotherCoach = (Coach) context.getBean("myCktCoach");
+        System.out.println(anotherCoach.getDailyWorkout());
     }
 }
