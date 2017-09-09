@@ -31,10 +31,8 @@
 
     <!--TODO 006: loading values from props-->
     <bean id="myCktCoachProp" class="com.practise.spring.CricketCoach">
-        <!--TODO 005: added literals-->
         <property name="name" value="${coach.name}"></property>
         <property name="team" value="${coach.team}"></property>
     </bean>
-
-
+    
 </beans>
