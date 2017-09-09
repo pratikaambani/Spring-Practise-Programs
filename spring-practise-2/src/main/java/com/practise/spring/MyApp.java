@@ -19,7 +19,10 @@ public class MyApp {
         System.out.println(myCoach.getDailyFortune());
 
         //TODO 004:
-        CricketCoach anotherCoach = context.getBean("myCktCoach", CricketCoach.class);
-        System.out.println(anotherCoach.getDailyWorkout());
+        CricketCoach cktCoach = context.getBean("myCktCoach", CricketCoach.class);
+        System.out.println(cktCoach.getDailyWorkout());
+        //TODO 005: Reading literal values from xml file
+        System.out.println("Reading literal values from xml file");
+        System.out.println("Name: " +cktCoach.getName()+ " and Team: " +cktCoach.getTeam());
     }
 }

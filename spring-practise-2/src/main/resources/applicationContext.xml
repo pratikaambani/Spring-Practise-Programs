@@ -13,7 +13,10 @@
 
     <!--TODO 004: setter based dependency-->
     <bean id="myCktCoach" class="com.practise.spring.CricketCoach">
-        <property name="service" ref="myFortuneService"> </property>
+        <!--<property name="service" ref="myFortuneService"> </property>-->
+        <!--TODO 005: added literals-->
+        <property name="name" value="Ravi Shashtri"></property>
+        <property name="team" value="India"></property>
     </bean>
 
 </beans>
