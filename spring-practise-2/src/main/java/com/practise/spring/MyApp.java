@@ -24,5 +24,11 @@ public class MyApp {
         //TODO 005: Reading literal values from xml file
         System.out.println("Reading literal values from xml file");
         System.out.println("Name: " +cktCoach.getName()+ " and Team: " +cktCoach.getTeam());
+
+        //TODO 006: reading values from props
+        CricketCoach cktPropCoach = context.getBean("myCktCoachProp", CricketCoach.class);
+        System.out.println(cktPropCoach.getDailyWorkout());
+        System.out.println("Reading values from props file");
+        System.out.println("Name: " +cktPropCoach.getName()+ " and Team: " +cktPropCoach.getTeam());
     }
 }

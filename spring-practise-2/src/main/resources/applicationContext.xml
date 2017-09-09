@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+      http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context-4.2.xsd"
+>
+
+    <!--<context:property-placeholder location="coach.properties" />-->
+    <context:property-placeholder location="classpath:coach.properties" />
+
 
     <bean id="myFortuneService" class="com.practise.spring.HappyFortuneService" />
 
@@ -18,5 +28,13 @@
         <property name="name" value="Ravi Shashtri"></property>
         <property name="team" value="India"></property>
     </bean>
+
+    <!--TODO 006: loading values from props-->
+    <bean id="myCktCoachProp" class="com.practise.spring.CricketCoach">
+        <!--TODO 005: added literals-->
+        <property name="name" value="${coach.name}"></property>
+        <property name="team" value="${coach.team}"></property>
+    </bean>
+
 
 </beans>
