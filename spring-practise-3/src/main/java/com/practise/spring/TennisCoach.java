@@ -38,7 +38,8 @@ public class TennisCoach implements Coach {
     //correction in git commit
     //TODO 013: Added setter based DI
     @Autowired
-    public void setFortuneService(FortuneService fortuneService) {
+    //TODO 014: Any method name apart from setter
+    public void randomMethodInsteadOfSetter(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 }
