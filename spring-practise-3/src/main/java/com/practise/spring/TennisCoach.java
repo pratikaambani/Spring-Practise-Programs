@@ -12,11 +12,17 @@ public class TennisCoach implements Coach {
 
     private FortuneService fortuneService;
 
+    public TennisCoach() {
+        System.out.println("This is default constructor.");
+    }
+
+    /*
     //TODO 012: Added constructor level DI
     @Autowired
     public TennisCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
+*/
 
     @Override
     public String getDailyWorkout() {
@@ -26,5 +32,12 @@ public class TennisCoach implements Coach {
     @Override
     public String getDailyFortune() {
         return fortuneService.getFortune();
+    }
+
+
+    //TODO 013: Added constructor level DI
+    @Autowired
+    public void setFortuneService(FortuneService fortuneService) {
+        this.fortuneService = fortuneService;
     }
 }
