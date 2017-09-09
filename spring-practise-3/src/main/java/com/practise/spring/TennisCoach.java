@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 
+    //TODO 015: field level DI
+    @Autowired
     private FortuneService fortuneService;
 
     public TennisCoach() {
@@ -37,9 +39,11 @@ public class TennisCoach implements Coach {
 
     //correction in git commit
     //TODO 013: Added setter based DI
+/*
     @Autowired
     //TODO 014: Any method name apart from setter
     public void randomMethodInsteadOfSetter(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
+*/
 }
