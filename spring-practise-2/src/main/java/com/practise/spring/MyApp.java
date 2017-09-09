@@ -18,7 +18,7 @@ public class MyApp {
         System.out.println(coach2.getDailyWorkout());
 
 
-        //TODO: reading from configuration file
+        //reading from configuration file
         ApplicationContext context = new ClassPathXmlApplicationContext(applicationContextPath);
         Coach myCoach = (Coach) context.getBean("myCoachBean", Coach.class);
         System.out.println(myCoach.getDailyWorkout());
