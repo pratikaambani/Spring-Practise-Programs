@@ -1,6 +1,7 @@
 package com.practise.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,6 +13,9 @@ public class TennisCoach implements Coach {
 
     //TODO 015: field level DI
     @Autowired
+    //TODO 016: using Qualifier to explicitly specify which bean will be qualified, as
+    // SadFortuneService is also in competition with HappyFortuneService
+    @Qualifier("happyFortuneService")
     private FortuneService fortuneService;
 
     public TennisCoach() {
