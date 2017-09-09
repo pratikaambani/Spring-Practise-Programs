@@ -8,8 +8,8 @@
 
     <bean id="myFortuneService" class="com.practise.spring.HappyFortuneService" />
 
-    <!--ToDo 007: Singleton Scopes--> <!--singleton-->
-    <bean id="myCoachBean" class="com.practise.spring.BaseballCoach" scope="singleton">
+    <!--ToDo 007: Singleton and Prototype Scopes--> <!--singleton-->
+    <bean id="myCoachBean" class="com.practise.spring.BaseballCoach" scope="prototype">
         <constructor-arg ref="myFortuneService" />
     </bean>
 
