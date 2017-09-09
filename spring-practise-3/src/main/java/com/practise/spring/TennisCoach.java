@@ -15,7 +15,7 @@ public class TennisCoach implements Coach {
     @Autowired
     //TODO 016: using Qualifier to explicitly specify which bean will be qualified, as
     // SadFortuneService is also in competition with HappyFortuneService
-    @Qualifier("happyFortuneService")
+    @Qualifier("randomFortuneService")
     private FortuneService fortuneService;
 
     public TennisCoach() {
