@@ -11,17 +11,12 @@ public class MyApp {
 
         String applicationContextPath = "applicationContext.xml";
 
-        Coach coach1 = new BaseballCoach();
-        System.out.println(coach1.getDailyWorkout());
-
-        Coach coach2 = new CricketCoach();
-        System.out.println(coach2.getDailyWorkout());
-
-
         //reading from configuration file
         ApplicationContext context = new ClassPathXmlApplicationContext(applicationContextPath);
         Coach myCoach = (Coach) context.getBean("myCoachBean", Coach.class);
         System.out.println(myCoach.getDailyWorkout());
+
+        System.out.println(myCoach.getDailyFortune());
 
     }
 }

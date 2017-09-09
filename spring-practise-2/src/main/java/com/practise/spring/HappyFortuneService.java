@@ -5,7 +5,7 @@ package com.practise.spring;
  */
 public class HappyFortuneService implements FortuneService{
 
-    public String getFortune() {
+    public String getDailyFortune() {
         return "Today is your lucky day";
     }
 }

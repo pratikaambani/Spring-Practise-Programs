@@ -5,5 +5,5 @@ package com.practise.spring;
  */
 public interface FortuneService {
 
-    String getFortune();
+    String getDailyFortune();
 }
