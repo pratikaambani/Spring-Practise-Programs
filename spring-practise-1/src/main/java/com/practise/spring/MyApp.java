@@ -6,8 +6,10 @@ package com.practise.spring;
 public class MyApp {
     public static void main(String[] args) {
 
-        BaseballCoach coach = new BaseballCoach();
+        Coach coach1 = new BaseballCoach();
+        System.out.println(coach1.getDailyWorkout());
 
-        System.out.println(coach.getDailyWorkout());
+        Coach coach2 = new CricketCoach();
+        System.out.println(coach2.getDailyWorkout());
     }
 }
