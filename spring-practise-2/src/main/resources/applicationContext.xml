@@ -5,7 +5,7 @@
 
     <bean id="myFortuneService" class="com.practise.spring.HappyFortuneService" />
 
-    <!--ToDo - Uncomment this-->
+    <!--ToDo 003: Uncomment this-->
     <!--<bean id="myCoachBean" class="com.practise.spring.TrackCoach" >-->
     <bean id="myCoachBean" class="com.practise.spring.BaseballCoach" >
         <constructor-arg ref="myFortuneService" />

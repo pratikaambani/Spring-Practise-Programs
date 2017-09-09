@@ -15,7 +15,7 @@ public class BaseballCoach implements Coach {
         return "Spend 30 mins daily on baseball practise";
     }
 
-    //TODO: injected fortune service
+    //TODO 003: injected fortune service
     public String getDailyFortune() {
         return fortuneService.getDailyFortune();
     }
