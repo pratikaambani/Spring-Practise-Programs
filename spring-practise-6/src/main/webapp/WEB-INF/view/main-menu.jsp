@@ -21,7 +21,8 @@ index.jsp will always be given preference over any file, regardless of configura
 <br />
 
 <%--TODO 024: reading form inputs--%>
-<a href="/showForm">Input Page</a>
+<%--TODO 027: @RequestMapping to controller--%>
+<a href="/mappingOnController/showForm">Input Page</a>
 
 </body>
 </html>

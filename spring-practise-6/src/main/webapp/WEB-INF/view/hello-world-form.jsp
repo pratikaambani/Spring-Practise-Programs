@@ -18,7 +18,8 @@
 <%--<form action="processFormToUpperCase" method="get">--%>
 <%--TODO 026: Form processing without HttpServletRequest | using /processToUpperCase path--%>
 <form action="processToUpperCase" method="get">
-    sdsad
+<%--TODO 027: @RequestMapping to controller--%>
+<form action="mappingOnController/processToUpperCase" method="get">
     <input type="text" name="studentName" placeholder="Name please!" />
     <input type="submit" />
 </form>
