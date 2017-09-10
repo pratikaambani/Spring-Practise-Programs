@@ -13,6 +13,9 @@
 <body>
 
 Student is confirmed. Details are: ${studentAttr.fName} and ${studentAttr.lName}
+<br />
+<%--TODO 029 Dropdown options--%>
+Country: ${studentAttr.country}
 
 </body>
 </html>

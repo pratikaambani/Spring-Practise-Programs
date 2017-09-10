@@ -26,4 +26,15 @@ public class Student {
     public void setlName(String lName) {
         this.lName = lName;
     }
+
+    //TODO 029 Dropdown options
+    private String country;
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
 }
