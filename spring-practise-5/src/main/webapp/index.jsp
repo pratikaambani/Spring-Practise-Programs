@@ -11,5 +11,7 @@ I've created this project using maven command line.
     -DarchetypeArtifactId=maven-archetype-webapp
     -DinteractiveMode=false</code></p>
 
+<p>Don't forget to check logs</p>
+
 </body>
 </html>

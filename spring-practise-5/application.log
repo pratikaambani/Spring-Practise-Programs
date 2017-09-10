@@ -1,0 +1,60 @@
+C:\apache-tomcat-8.5.16\bin\catalina.bat run
+[2017-09-10 12:02:47,422] Artifact spring-practise-5:war exploded: Server is not connected. Deploy is not available.
+Using CATALINA_BASE:   "C:\Users\AmbaniP\.IntelliJIdea2016.1\system\tomcat\index_jsp_Spring_Practise_Programs_3"
+Using CATALINA_HOME:   "C:\apache-tomcat-8.5.16"
+Using CATALINA_TMPDIR: "C:\apache-tomcat-8.5.16\temp"
+Using JRE_HOME:        "C:\Program Files\Java\jdk1.8.0_111"
+Using CLASSPATH:       "C:\apache-tomcat-8.5.16\bin\bootstrap.jar;C:\apache-tomcat-8.5.16\bin\tomcat-juli.jar"
+10-Sep-2017 12:02:49.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.16
+10-Sep-2017 12:02:49.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 21 2017 17:01:09 UTC
+10-Sep-2017 12:02:49.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.16.0
+10-Sep-2017 12:02:49.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 8.1
+10-Sep-2017 12:02:49.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.3
+10-Sep-2017 12:02:49.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Sep-2017 12:02:49.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_111\jre
+10-Sep-2017 12:02:49.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_111-b14
+10-Sep-2017 12:02:49.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Sep-2017 12:02:49.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\AmbaniP\.IntelliJIdea2016.1\system\tomcat\index_jsp_Spring_Practise_Programs_3
+10-Sep-2017 12:02:49.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.5.16
+10-Sep-2017 12:02:49.963 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\AmbaniP\.IntelliJIdea2016.1\system\tomcat\index_jsp_Spring_Practise_Programs_3\conf\logging.properties
+10-Sep-2017 12:02:49.963 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Sep-2017 12:02:49.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote=
+10-Sep-2017 12:02:49.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.port=1099
+10-Sep-2017 12:02:49.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+10-Sep-2017 12:02:49.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
+10-Sep-2017 12:02:49.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.rmi.server.hostname=127.0.0.1
+10-Sep-2017 12:02:49.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Sep-2017 12:02:49.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Sep-2017 12:02:49.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\AmbaniP\.IntelliJIdea2016.1\system\tomcat\index_jsp_Spring_Practise_Programs_3
+10-Sep-2017 12:02:49.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.5.16
+10-Sep-2017 12:02:49.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.5.16\temp
+10-Sep-2017 12:02:49.967 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.12] using APR version [1.5.2].
+10-Sep-2017 12:02:49.968 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+10-Sep-2017 12:02:49.968 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+10-Sep-2017 12:02:51.077 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2k  26 Jan 2017]
+10-Sep-2017 12:02:51.370 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Sep-2017 12:02:51.497 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Sep-2017 12:02:51.502 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+10-Sep-2017 12:02:51.588 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Sep-2017 12:02:51.589 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2611 ms
+10-Sep-2017 12:02:51.654 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Sep-2017 12:02:51.655 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.16
+10-Sep-2017 12:02:51.678 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Sep-2017 12:02:51.761 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+10-Sep-2017 12:02:51.829 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 239 ms
+Connected to server
+[2017-09-10 12:02:51,939] Artifact spring-practise-5:war exploded: Artifact is being deployed, please wait...
+10-Sep-2017 12:02:54.141 FINE [RMI TCP Connection(2)-127.0.0.1] org.apache.jasper.servlet.TldScanner.scanResourcePaths No TLD files were found in resource path [/WEB-INF/].
+10-Sep-2017 12:02:54.149 FINE [RMI TCP Connection(2)-127.0.0.1] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan No TLD files were found in [file:/C:/PA/IntelliJWorkspace/Spring%20Practise%20Programs/spring-practise-5/target/spring-practise-5/WEB-INF/lib/spring-beans-4.3.5.RELEASE.jar]. Consider adding the JAR to the tomcat.util.scan.StandardJarScanFilter.jarsToSkip property in CATALINA_BASE/conf/catalina.properties file.
+10-Sep-2017 12:02:54.152 FINE [RMI TCP Connection(2)-127.0.0.1] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan No TLD files were found in [file:/C:/PA/IntelliJWorkspace/Spring%20Practise%20Programs/spring-practise-5/target/spring-practise-5/WEB-INF/lib/spring-aop-4.3.5.RELEASE.jar]. Consider adding the JAR to the tomcat.util.scan.StandardJarScanFilter.jarsToSkip property in CATALINA_BASE/conf/catalina.properties file.
+10-Sep-2017 12:02:54.157 FINE [RMI TCP Connection(2)-127.0.0.1] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan No TLD files were found in [file:/C:/PA/IntelliJWorkspace/Spring%20Practise%20Programs/spring-practise-5/target/spring-practise-5/WEB-INF/lib/spring-context-4.3.5.RELEASE.jar]. Consider adding the JAR to the tomcat.util.scan.StandardJarScanFilter.jarsToSkip property in CATALINA_BASE/conf/catalina.properties file.
+10-Sep-2017 12:02:54.162 FINE [RMI TCP Connection(2)-127.0.0.1] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan No TLD files were found in [file:/C:/PA/IntelliJWorkspace/Spring%20Practise%20Programs/spring-practise-5/target/spring-practise-5/WEB-INF/lib/spring-core-4.3.5.RELEASE.jar]. Consider adding the JAR to the tomcat.util.scan.StandardJarScanFilter.jarsToSkip property in CATALINA_BASE/conf/catalina.properties file.
+10-Sep-2017 12:02:54.164 FINE [RMI TCP Connection(2)-127.0.0.1] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan No TLD files were found in [file:/C:/PA/IntelliJWorkspace/Spring%20Practise%20Programs/spring-practise-5/target/spring-practise-5/WEB-INF/lib/spring-practise-parent-1.0-SNAPSHOT.jar]. Consider adding the JAR to the tomcat.util.scan.StandardJarScanFilter.jarsToSkip property in CATALINA_BASE/conf/catalina.properties file.
+10-Sep-2017 12:02:54.166 FINE [RMI TCP Connection(2)-127.0.0.1] org.apache.jasper.servlet.TldScanner$TldScannerCallback.scan No TLD files were found in [file:/C:/PA/IntelliJWorkspace/Spring%20Practise%20Programs/spring-practise-5/target/spring-practise-5/WEB-INF/lib/spring-expression-4.3.5.RELEASE.jar]. Consider adding the JAR to the tomcat.util.scan.StandardJarScanFilter.jarsToSkip property in CATALINA_BASE/conf/catalina.properties file.
+10-Sep-2017 12:02:54.169 INFO [RMI TCP Connection(2)-127.0.0.1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2017-09-10 12:02:54,286] Artifact spring-practise-5:war exploded: Artifact is deployed successfully
+[2017-09-10 12:02:54,286] Artifact spring-practise-5:war exploded: Deploy took 2,347 milliseconds
+10-Sep-2017 12:03:01.683 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.16\webapps\manager]
+10-Sep-2017 12:03:01.766 FINE [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanResourcePaths No TLD files were found in resource path [/WEB-INF/jsp/].
+10-Sep-2017 12:03:01.768 FINE [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanResourcePaths No TLD files were found in resource path [/WEB-INF/].
+10-Sep-2017 12:03:01.786 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.16\webapps\manager] has finished in [102] ms
