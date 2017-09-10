@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
 <head>
@@ -24,8 +25,15 @@
     Your favourite language:
     Java <form:radiobutton path="favouriteLang" value="java" />
     C <form:radiobutton path="favouriteLang" value="c" />
-    C++ <form:radiobutton path="favouriteLang" value="cpp" />
-
+    C++ <form:radiobutton path="favouriteLang" value="cpp" /> <br />
+    
+    <%--TODO 032 Checkboxes Favourite Language--%>
+    Favourite OS:
+    Windows <form:checkbox path="os" value="windows"/>
+    Linux <form:checkbox path="os" value="linux"/>
+    Mac <form:checkbox path="os" value="mac"/>
+    <br />
+    
     <input type="submit" value="Submit">
 </form:form>
 <br />

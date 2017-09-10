@@ -1,5 +1,7 @@
 package com.practise.spring;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 /**
@@ -53,6 +55,10 @@ public class Student {
         return countryOptions;
     }
 
+    public void setCountryOptions(LinkedHashMap<String, String> countryOptions) {
+        this.countryOptions = countryOptions;
+    }
+
     //TODO 031 radio buttons
     private String favouriteLang;
 
@@ -62,5 +68,16 @@ public class Student {
 
     public void setFavouriteLang(String favouriteLang) {
         this.favouriteLang = favouriteLang;
+    }
+
+    //TODO 032 checkbox
+    private String[] os;
+
+    public String[] getOs() {
+        return os;
+    }
+
+    public void setOs(String[] os) {
+        this.os = os;
     }
 }

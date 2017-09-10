@@ -18,6 +18,15 @@ Student is confirmed. Details are: ${studentAttr.fName} and ${studentAttr.lName}
 Country: ${studentAttr.country} <br />
 <%--TODO 031 radio --%>
 Favourite Language is ${studentAttr.favouriteLang}
+<%--TODO 032 Checkboxes --%>
+Favourite OS:
+
+<ul>
+    <c:forEach var="os" items="${studentAttr.os}" >
+        <li>${os}</li>
+    </c:forEach>
+</ul>
+
 
 </body>
 </html>
