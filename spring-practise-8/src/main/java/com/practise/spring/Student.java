@@ -1,5 +1,7 @@
 package com.practise.spring;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -9,7 +11,10 @@ import java.util.LinkedHashMap;
  */
 public class Student {
 
+    @NotNull
+    @Size(min = 2, max = 6, message = "is required re!")
     private String fName;
+
     private String lName;
 
     public Student() {

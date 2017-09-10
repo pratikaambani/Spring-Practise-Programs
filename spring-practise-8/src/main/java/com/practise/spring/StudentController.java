@@ -2,8 +2,11 @@ package com.practise.spring;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
 
 /**
  * Created by Pratik Ambani on 10/09/2017.
@@ -25,9 +28,16 @@ public class StudentController {
     }
 
     @RequestMapping("/processForm")
-    public String processForm(@ModelAttribute("studentAttr") Student theStudent) {
+    public String processForm(@Valid @ModelAttribute("studentAttr") Student theStudent,
+                              BindingResult theBindingResult) {
         System.out.println("Processing part got executed, fName: " +theStudent.getlName()+
                 " and lName: " +theStudent.getlName());
-        return "student-confirmation";
+
+        if(theBindingResult.hasErrors()) {
+            return "student-form";
+
+        } else {
+            return "student-confirmation";
+        }
     }
 }

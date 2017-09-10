@@ -10,12 +10,8 @@
 <form:form action="/processForm" modelAttribute="studentAttr">
     FirstName: <form:input path="fName" /> <br />
     LastName: <form:input path="lName" /> <br />
+    <form:errors path="fName" cssStyle="border-color: #ea454d" />
     <form:select path="country">
-<%-- Uncomment this to run 029
-        <form:option value="IN" label="IN" />
-        <form:option value="US" label="US" />
-        <form:option value="UK" label="UK" />
---%>
         <form:options items="${studentAttr.countryOptions}" />
     </form:select>
     <br />
