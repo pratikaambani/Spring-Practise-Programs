@@ -11,8 +11,14 @@
 </head>
 <body>
 
-<%--TODO 025: Previous version was with action /processForm--%>
-<form action="processFormToUpperCase" method="get">
+
+<%--TODO 024: Form processing | using /processForm path--%>
+<%--<form action="processForm" method="get">--%>
+<%--TODO 025: Form processing + oprations | using /processFormToUpperCase path--%>
+<%--<form action="processFormToUpperCase" method="get">--%>
+<%--TODO 026: Form processing without HttpServletRequest | using /processToUpperCase path--%>
+<form action="processToUpperCase" method="get">
+    sdsad
     <input type="text" name="studentName" placeholder="Name please!" />
     <input type="submit" />
 </form>
