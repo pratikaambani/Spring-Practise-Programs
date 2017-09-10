@@ -1,5 +1,7 @@
 package com.practise.spring;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
@@ -15,6 +17,9 @@ public class Student {
     @Size(min = 2, max = 6, message = "is required re!")
     private String fName;
 
+    //TODO 034 Min Max
+    @Min(value = 2, message = "${min.value.condition}")
+    @Max(value = 6, message = "${max.value.condition}")
     private String lName;
 
     public Student() {
