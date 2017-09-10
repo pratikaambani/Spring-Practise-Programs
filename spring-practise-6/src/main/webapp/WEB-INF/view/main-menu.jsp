@@ -18,6 +18,10 @@ Was unable to run this page(main-menu.jsp) because didn't remove index.jsp in ro
 <p>Again, Do't forget to analyse logs</p>
 
 index.jsp will always be given preference over any file, regardless of configurations.
+<br />
+
+<%--TODO 024: reading form inputs--%>
+<a href="/showForm">Input Page</a>
 
 </body>
 </html>
