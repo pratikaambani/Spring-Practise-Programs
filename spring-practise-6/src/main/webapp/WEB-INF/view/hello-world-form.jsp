@@ -11,7 +11,8 @@
 </head>
 <body>
 
-<form action="processForm" method="get">
+<%--TODO 025: Previous version was with action /processForm--%>
+<form action="processFormToUpperCase" method="get">
     <input type="text" name="studentName" placeholder="Name please!" />
     <input type="submit" />
 </form>

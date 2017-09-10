@@ -6,7 +6,7 @@
 
 Hi, This is response page
 
-Name: ${param.studentName}
+Name: ${param.studentName} and name in uppercase is ${name}
 
 </body>
 </html>
