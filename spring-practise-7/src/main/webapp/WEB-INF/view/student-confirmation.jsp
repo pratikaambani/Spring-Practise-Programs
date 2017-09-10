@@ -15,7 +15,9 @@
 Student is confirmed. Details are: ${studentAttr.fName} and ${studentAttr.lName}
 <br />
 <%--TODO 029 Dropdown options--%>
-Country: ${studentAttr.country}
+Country: ${studentAttr.country} <br />
+<%--TODO 031 radio --%>
+Favourite Language is ${studentAttr.favouriteLang}
 
 </body>
 </html>

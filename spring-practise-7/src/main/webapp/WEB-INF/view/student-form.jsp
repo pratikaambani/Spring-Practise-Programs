@@ -19,8 +19,18 @@
 --%>
         <form:options items="${studentAttr.countryOptions}" />
     </form:select>
+    <br />
+	<%--TODO 031 radio --%>
+    Your favourite language:
+    Java <form:radiobutton path="favouriteLang" value="java" />
+    C <form:radiobutton path="favouriteLang" value="c" />
+    C++ <form:radiobutton path="favouriteLang" value="cpp" />
+
     <input type="submit" value="Submit">
 </form:form>
+<br />
+
+
 
 </body>
 </html>

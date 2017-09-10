@@ -52,4 +52,15 @@ public class Student {
     public LinkedHashMap<String, String> getCountryOptions() {
         return countryOptions;
     }
+
+    //TODO 031 radio buttons
+    private String favouriteLang;
+
+    public String getFavouriteLang() {
+        return favouriteLang;
+    }
+
+    public void setFavouriteLang(String favouriteLang) {
+        this.favouriteLang = favouriteLang;
+    }
 }
