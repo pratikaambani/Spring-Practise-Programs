@@ -17,6 +17,7 @@ import javax.annotation.PreDestroy;
 public class TennisCoach implements Coach {
 
     @Autowired
+    @Qualifier("happyFortuneService")
     private FortuneService fortuneService;
 
     public TennisCoach() {
