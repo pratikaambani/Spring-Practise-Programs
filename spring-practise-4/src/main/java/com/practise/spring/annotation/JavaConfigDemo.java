@@ -1,5 +1,6 @@
-package com.practise.spring;
+package com.practise.spring.annotation;
 
+import com.practise.spring.Coach;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -7,8 +8,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class JavaConfigDemo {
     public static void main(String[] args) {
+        //TODO 019: Wiping out xmls totally
         AnnotationConfigApplicationContext annotationContext = new AnnotationConfigApplicationContext(SportConfig.class);
 
+        System.out.println("reading pkgs and other values from Sport Config instead of an XML.");
         Coach coach = annotationContext.getBean("tennisCoach", Coach.class);
         Coach alphaCoach = annotationContext.getBean("tennisCoach", Coach.class);
 
