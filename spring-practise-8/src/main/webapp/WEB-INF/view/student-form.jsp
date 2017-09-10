@@ -10,6 +10,8 @@
 <form:form action="/processForm" modelAttribute="studentAttr">
     FirstName: <form:input path="fName" /> <br />
     LastName: <form:input path="lName" /> <br />
+    <!--TODO 035 Custom Validation-->
+    Mobile Number: <form:input path="moNo" /> <br />
     <form:errors path="fName" cssStyle="border-color: #ea454d" />
     <form:select path="country">
         <form:options items="${studentAttr.countryOptions}" />

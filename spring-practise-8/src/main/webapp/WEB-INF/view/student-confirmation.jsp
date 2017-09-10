@@ -14,6 +14,9 @@
 
 Student is confirmed. Details are: ${studentAttr.fName} and ${studentAttr.lName}
 <br />
+<!--TODO 035 Custom Validation-->
+Mobile Number: ${studentAttr.moNo}|
+<br />
 Country: ${studentAttr.country} <br />
 Favourite Language is ${studentAttr.favouriteLang}
 Favourite OS:
