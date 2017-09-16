@@ -16,6 +16,10 @@ public class MembershipDAO {
 */
 
     public String addAccount() {
-        return "Class name is: \" +this.getClass().getCanonicalName()+ \" while adding an account";
+        return "Class name is:"  +this.getClass().getCanonicalName()+ " while adding an account";
+    }
+
+    public String addAccount(String name) {
+        return "Name is: " +name;
     }
 }

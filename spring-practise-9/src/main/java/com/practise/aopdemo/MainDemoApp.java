@@ -25,12 +25,14 @@ public class MainDemoApp {
         } catch (Exception e) {
             e.printStackTrace();
         }
-*/
+        */
 
         MembershipDAO membershipDao = context.getBean("membershipDAO", MembershipDAO.class);
-        membershipDao.addAccount();
+        //membershipDao.addAccount();
+        System.out.println("In Method: " +membershipDao.addAccount());
+        System.out.println("Printing name: " +membershipDao.addAccount("Pratik"));
+        System.out.println("\n \n \n \n");
 
         context.close();
-
     }
 }

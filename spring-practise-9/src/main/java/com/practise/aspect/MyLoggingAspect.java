@@ -1,5 +1,6 @@
 package com.practise.aspect;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
@@ -45,7 +46,18 @@ public class MyLoggingAspect {
     }
 */
 
+    @AfterReturning(pointcut = "execution(* *add*(..))", returning = "myresult1")
+//    @AfterReturning("execution(public void *add*())")
+    public void afterSuccessAddAccountAdvice(JoinPoint joinPoint, String myresult1) {
+        System.out.println("@AfterReturning aspect  \n");
+        System.out.println("Method name: " +joinPoint.getSignature().toShortString()+ "\n");
+        System.out.println("Retrieving values from method in advice, myresult1: " +myresult1);
+        convertItToUppercase(myresult1);
+    }
 
+    private void convertItToUppercase(String myresult1) {
+        myresult1.toUpperCase();
+    }
 
 
     //--------------------------------------Practise--------------------------------------
@@ -84,6 +96,7 @@ public class MyLoggingAspect {
 
 
 
+/*
     @Before("execution(public void com.practise.dao.AccountDAO.addAccount(..))")
     //TODO 038: matches all method irrespective of nubmer of arguments in mentioned class
     public void beforeAddAccountAdviceMultipleParams() {
@@ -91,7 +104,6 @@ public class MyLoggingAspect {
                 "addAccount() :( \n As I am aspect, I'm a huge burden to the server, I don't want to be :'(  ");
         System.out.println("But hey!! I can help you with loggers :) ");
     }
-
-
+*/
 
 }
