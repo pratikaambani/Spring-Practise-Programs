@@ -19,6 +19,10 @@
         <module>spring-practise-5</module>
         <module>spring-practise-6</module>
         <module>spring-practise-7</module>
+        <module>spring-practise-8</module>
+
+		<!-- AOP -->
+        <module>spring-practise-9</module>
     </modules>
 
     <dependencies>
