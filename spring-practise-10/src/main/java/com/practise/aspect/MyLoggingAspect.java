@@ -17,7 +17,7 @@ public class MyLoggingAspect {
     }
 
     //TODO 039: Combining pointcuts
-    @Pointcut("execution(* com.practise.dao.*.*(..))")
+    @Pointcut("execution(* com.practise.dao.*.get*(..))")
     public void declaringPointcutForGetters() {
 
     }
