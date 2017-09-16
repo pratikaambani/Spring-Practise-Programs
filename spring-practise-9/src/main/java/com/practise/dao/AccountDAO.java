@@ -21,6 +21,10 @@ public class AccountDAO {
 */
 
 
+    public void addAccount(String name) {
+        System.out.println("addAccount() with name parameter: " +name);
+    }
+
 
 
 

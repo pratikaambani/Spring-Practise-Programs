@@ -16,9 +16,10 @@ public class MainDemoApp {
 
         dao.addAccount();
         System.out.println("Again calling same method ;) ");
-        dao.addAccount();
+        dao.addAccount("Hiiiiii, from param");
 
-/*
+        dao.addAccount();
+        /*
         try {
             dao.addAccountFailure();
         } catch (Exception e) {

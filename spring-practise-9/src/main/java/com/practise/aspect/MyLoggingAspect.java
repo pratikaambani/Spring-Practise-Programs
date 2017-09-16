@@ -81,5 +81,17 @@ public class MyLoggingAspect {
         System.out.println("Practise 1: This will be executed for any method named \"addAccount\" having/containing  \"any type\"");
     }
 */
- 
+
+
+
+    @Before("execution(public void com.practise.dao.AccountDAO.addAccount(..))")
+    //TODO 038: matches all method irrespective of nubmer of arguments in mentioned class
+    public void beforeAddAccountAdviceMultipleParams() {
+        System.out.println("Practise 1: I'm @Before aspect, I'm asked to get executed before " +
+                "addAccount() :( \n As I am aspect, I'm a huge burden to the server, I don't want to be :'(  ");
+        System.out.println("But hey!! I can help you with loggers :) ");
+    }
+
+
+
 }
