@@ -1,6 +1,7 @@
 package com.practise.aopdemo;
 
 import com.practise.dao.AccountDAO;
+import com.practise.dao.MembershipDAO;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -17,11 +18,16 @@ public class MainDemoApp {
         System.out.println("Again calling same method ;) ");
         dao.addAccount();
 
+/*
         try {
             dao.addAccountFailure();
         } catch (Exception e) {
             e.printStackTrace();
         }
+*/
+
+        MembershipDAO membershipDao = context.getBean("membershipDAO", MembershipDAO.class);
+        membershipDao.addAccount();
 
         context.close();
 

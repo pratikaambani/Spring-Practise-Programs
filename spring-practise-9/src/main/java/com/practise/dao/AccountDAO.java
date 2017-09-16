@@ -13,8 +13,21 @@ public class AccountDAO {
         System.out.println("Aspects suspected somewhere around this execution ;) ");
     }
 
+/*
     public void addAccountFailure() throws Exception {
         System.out.println("Failure aspects suspected somewhere around this execution ;) ");
         throw new RuntimeException();
     }
+*/
+
+
+
+
+
+    //Practise 2
+    public void updateAccount() {
+        System.out.println("This is updateAccount()");
+    }
+
+
 }
