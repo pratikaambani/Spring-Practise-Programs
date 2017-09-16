@@ -10,8 +10,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 //TODO 036: Check Annotations
 @Configuration
 @EnableAspectJAutoProxy
-@ComponentScan("com.practise.aopdemo, com.practise.dao")
+@ComponentScan("com.practise")
 public class DemoConfig {
-
 
 }

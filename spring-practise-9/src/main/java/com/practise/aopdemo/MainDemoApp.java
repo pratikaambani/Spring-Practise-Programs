@@ -11,7 +11,7 @@ public class MainDemoApp {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
 
-        AccountDAO dao = context.getBean("myBean", AccountDAO.class);
+        AccountDAO dao = context.getBean("accountDAO", AccountDAO.class);
         dao.addAccount();
 
         context.close();

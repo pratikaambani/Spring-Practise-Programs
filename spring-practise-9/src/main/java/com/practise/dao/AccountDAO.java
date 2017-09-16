@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 /**
  * Created by Pratik Ambani on 16/09/2017.
  */
-@Component(value = "myBean")
+@Component
 public class AccountDAO {
 
     public void addAccount() {
