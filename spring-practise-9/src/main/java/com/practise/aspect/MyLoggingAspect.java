@@ -1,9 +1,6 @@
 package com.practise.aspect;
 
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 /**
@@ -23,4 +20,16 @@ public class MyLoggingAspect {
                 "addAccount() :( \n As I am aspect, I'm a huge burden to the server, I don't want to be :'(  ");
         System.out.println("But hey!! I can help you with loggers :) ");
     }
+
+    @After("execution(public void addAccount())")
+    public void afterAddAccountAdvice() {
+        System.out.println("I'm @After aspect, I'm asked to get executed " +
+                "after said method, irrespective of success or failures..");
+    }
+
+    @AfterReturning("execution(public void addAccount())")
+    public void afterSuccessAddAccountAdvice() {
+        System.out.println("I'm @After aspect, I'm asked to get executed after successful execution of said method..");
+    }
+
 }
