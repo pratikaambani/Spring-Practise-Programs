@@ -12,4 +12,9 @@ public class AccountDAO {
         System.out.println("Class name is: " +this.getClass().getCanonicalName()+ " while adding an account");
         System.out.println("Aspects suspected somewhere around this execution ;) ");
     }
+
+    public void addAccountFailure() throws Exception {
+        System.out.println("Failure aspects suspected somewhere around this execution ;) ");
+        throw new RuntimeException();
+    }
 }

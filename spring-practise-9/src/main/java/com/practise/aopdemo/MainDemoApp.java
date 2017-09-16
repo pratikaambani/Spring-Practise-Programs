@@ -13,6 +13,11 @@ public class MainDemoApp {
 
         AccountDAO dao = context.getBean("accountDAO", AccountDAO.class);
         dao.addAccount();
+        try {
+            dao.addAccountFailure();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         context.close();
 

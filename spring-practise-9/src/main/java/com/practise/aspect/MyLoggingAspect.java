@@ -29,7 +29,14 @@ public class MyLoggingAspect {
 
     @AfterReturning("execution(public void addAccount())")
     public void afterSuccessAddAccountAdvice() {
-        System.out.println("I'm @After aspect, I'm asked to get executed after successful execution of said method..");
+        System.out.println("I'm @AfterReturning aspect, I'm asked to get executed after successful execution of said method..");
     }
+
+    @AfterThrowing("execution(public void addAccountFailure())")
+    public void afterFailureAddAccountAdvice() {
+        System.out.println("I'm @AfterThrowing aspect, I'm asked to get executed after failed execution of said method..");
+    }
+
+
 
 }
