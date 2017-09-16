@@ -12,7 +12,11 @@ public class MainDemoApp {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
 
         AccountDAO dao = context.getBean("accountDAO", AccountDAO.class);
+
         dao.addAccount();
+        System.out.println("Again calling same method ;) ");
+        dao.addAccount();
+
         try {
             dao.addAccountFailure();
         } catch (Exception e) {
