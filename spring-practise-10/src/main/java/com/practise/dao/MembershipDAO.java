@@ -15,4 +15,8 @@ public class MembershipDAO {
     public void randomMethod() {
         System.out.println("MembershipDAO#randomMethod()");
     }
+
+    public void getUsername() {
+        System.out.println("MembershipDAO#getUsername()");
+    }
 }

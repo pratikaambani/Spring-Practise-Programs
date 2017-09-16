@@ -19,8 +19,8 @@ public class MainDemoApp {
         MembershipDAO membershipDao = context.getBean("membershipDAO", MembershipDAO.class);
         System.out.println(membershipDao.addAccount());
         membershipDao.randomMethod();
+        membershipDao.getUsername();
 
         context.close();
-
     }
 }
