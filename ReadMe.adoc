@@ -1,0 +1,4 @@
+= Notes
+
+Refer notes of this tutorial from *personal notes* repository
+under spring Directory
