@@ -25,6 +25,7 @@
         <module>spring-practise-9</module>
         <module>spring-practise-10</module>
         <module>spring-practise-11</module>
+        <module>spring-practise-individual</module>
     </modules>
 
     <dependencies>
